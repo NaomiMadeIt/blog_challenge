@@ -142,8 +142,7 @@ if( $_POST['did_comment'] ){
 
 		<?php
 		// user feedback
-		echo $message;
-		print_r($_POST);
+		show_feedback($message);
 		?>
 
 		<form action="#comment-form" method="post">

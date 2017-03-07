@@ -16,6 +16,6 @@ if( $db->connect_errno > 0 ){
 define('SALT', 'vgrqejun4tge7iuohtr1yhtdkmrsf52318675326gresjiludsvz6yg');
 
 define('ROOT_URL', 'http://localhost/naomi_php/blog_challenge/');
-define('ROOT_PATH', 'E:\xampp\htdocs\naomi_php\blog_challenge');
+define('ROOT_PATH', 'C:\xampp\htdocs\naomi_php\blog_challenge');
 
 error_reporting( E_ALL & ~E_NOTICE );

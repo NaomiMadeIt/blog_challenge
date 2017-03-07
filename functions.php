@@ -40,7 +40,7 @@ function clean_boolean( $untrusted ){
  * Helper function to display user feedback after parsing a form
  * @param  string $feedback  A quick feedback message to the user.
  * @param  array $errors 	A list of any inline field errors.
- * @return string 	Displays a div containing all the feedback and errors. 
+ * @return string 	Displays a div containing all the feedback and errors.
  */
 function show_feedback( $feedback, $errors = array() ){
 	if( isset($feedback) ){
@@ -55,7 +55,7 @@ function show_feedback( $feedback, $errors = array() ){
 			echo '</ul>';
 		}
 		echo '</div>';
-	} 
+	}
 }
 
 /**
@@ -139,7 +139,7 @@ function show_userpic( $user_id, $size ){
 		//display the image if it exists, otherwise show the default userpic
 		$row = $result->fetch_assoc();
 		if( $row['userpic'] != '' ){
-			echo '<img src="' . ROOT_URL . 'uploads/' . $row['userpic'] . '_' . $size . 
+			echo '<img src="' . ROOT_URL . 'uploads/' . $row['userpic'] . '_' . $size .
 			'.jpg" class="userpic" alt="' . $row['username'] . '\'s user pic">';
 		}else{
 			echo '<img src="' . ROOT_URL . 'images/default_' . $size . '.jpg" class="userpic" alt="default userpic">';
