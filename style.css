@@ -1,0 +1,235 @@
+html {
+  background: #0a1f3a;
+  background-image: url(images/sakura.jpg);
+  box-sizing: border-box;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
+body {
+  background: white;
+  max-width: 750px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #0f2f57;
+}
+main {
+  border-left: 3px solid #03cfb9;
+  border-right: 3px solid #03cfb9;
+}
+.emphasis {
+  color: #ff73e2;
+}
+.thicc {
+  font-weight: bold;
+}
+#sidebar {
+  background: #c9e8f5;
+}
+
+#content,
+#sidebar,
+#footer {
+  padding: 1em;
+}
+
+#header {
+  min-height: 200px;
+  background: #004f6c;
+  background-image: url(images/seigaiha.jpg);
+  border-bottom: 20px double #03cfb9;
+}
+#header h1 {
+  font-family: 'Freckle Face', cursive;
+  font-size: 3em;
+  padding-top: 100px;
+  padding-left: 50px;
+  margin: 0;
+}
+#header h1 a {
+  color: #ff73e2;
+}
+#header h1 a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#footer {
+  background: #004f6c;
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Unkempt', cursive;
+}
+main h2 {
+  color: #a83787;
+  /*font-family: 'Freckle Face', cursive;*/
+  font-size: 2em;
+}
+
+h4 {
+  display: inline;
+  font-style: normal;
+}
+
+a {
+  color: #004f6c;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #fb4bc8;
+  transition: .3s ease;
+}
+.losbox{
+  width: 300px;
+  margin: 0 auto;
+}
+.loscaptions {
+  font-size: .9em;
+  text-align: center;
+  font-style: italic;
+}
+.searchform {
+  padding-bottom: 10px;
+}
+input[type="submit"]{
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fb4bc8;
+  background-color: #004f6c;
+  border: 1px solid #03cfb9;
+}
+input[type="submit"]:hover {
+  color: white;
+  background-color: #03cfb9;
+  border: 1px solid #004f6c;
+  transition: .3s ease;
+  cursor: pointer;
+}
+aside {
+  border-left: 3px solid #03cfb9;
+}
+aside h2 {
+  color: #a83787;
+  padding-left: 10px;
+  line-height: 10px;
+}
+ul {
+  list-style-type: none;
+}
+aside ul:first-of-type {
+  padding-bottom: 0;
+}
+aside ul {
+  padding-bottom: 20px;
+}
+aside li {
+  padding-bottom: .2em;
+}
+.loslinks {
+  font-size: 1.25em;
+}
+.loslinks li {
+  padding-bottom: 1.25em;
+  font-style: italic;
+}
+.morecontent span {
+  display: none;
+}
+
+/* ==form controls */
+input, textarea, label{
+  display: block;
+  width:100%;
+  margin:.2em 0;
+}
+
+
+/* feedback */
+.error {
+  background-color: #ffe9e0;
+  border-color: #ffc4ad;
+}
+
+label.error {
+  padding: .2em .5em;
+}
+
+.feedback {
+  background: #fcfae6;
+  color: #857a11;
+  margin: 1em;
+  padding: .5em .5em .5em 2em;
+  border: solid 1px khaki;
+}
+.feedback:before {
+  content: "";
+  font-family: fontawesome;
+  color: #e4d232;
+  margin-left: -1.5em;
+  margin-right: .5em;
+}
+.feedback li:before {
+  border-left-color: #f6f0b9;
+}
+.feedback.error {
+  background: #ffe9e0;
+  color: #942a00;
+  margin: 1em;
+  padding: .5em .5em .5em 2em;
+  border: solid 1px lightsalmon;
+}
+.feedback.error:before {
+  content: "";
+  font-family: fontawesome;
+  color: #ff5714;
+  margin-left: -1.5em;
+  margin-right: .5em;
+}
+.feedback.error li:before {
+  border-left-color: #ffc4ad;
+}
+.feedback.success {
+  background: #98eee6;
+  color: #08322e;
+  margin: 1em;
+  padding: .5em .5em .5em 2em;
+  border: solid 1px turquoise;
+}
+.feedback.success:before {
+  content: "";
+  font-family: fontawesome;
+  color: #1aa093;
+  margin-left: -1.5em;
+  margin-right: .5em;
+}
+.feedback.success li:before {
+  border-left-color: #6ce7db;
+}
+
+
+
+
+@media screen and (min-width: 550px) {
+  #content {
+    width: 65%;
+    float: right;
+  }
+
+  #sidebar {
+    width: 35%;
+    float: left;
+    font-size: .9em;
+  }
+
+  #footer {
+    background-image: url(images/seigaiha.jpg);
+    clear: both;
+    border-top: 15px double #03cfb9;
+    color: #ff73e2;
+  }
+}
